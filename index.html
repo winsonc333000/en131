@@ -431,22 +431,34 @@ function Portfolio() {
         </FadeIn>
 
         <FadeIn delay={0.25}>
-          <div style={{
-            marginTop: 20, textAlign: "center",
-            fontFamily: "var(--body)", fontSize: "0.95rem", color: "#555", lineHeight: 1.7,
+          <div className="nb-card-custom" style={{
+            marginTop: 28, padding: "24px 32px", maxWidth: 520,
+            background: "var(--nb-cream)",
           }}>
-            <strong style={{ fontFamily: "var(--heading)", fontSize: "1rem", color: "var(--nb-text)" }}>Winson Chen</strong>
-            {" · "}New York{" · "}UI Design
-            <br />
+            <div style={{ display: "flex", alignItems: "baseline", gap: 12, flexWrap: "wrap", marginBottom: 10 }}>
+              <span style={{
+                fontFamily: "var(--heading)", fontSize: "1.1rem", fontWeight: 800,
+                textTransform: "uppercase", color: "var(--nb-text)",
+              }}>Winson Chen</span>
+              <span className="nb-badge" style={{ background: "var(--nb-orange)" }}>New York</span>
+              <span className="nb-badge" style={{ background: "var(--nb-cyan)" }}>UI Design</span>
+            </div>
+            <p style={{
+              fontFamily: "var(--body)", fontSize: "0.9rem", lineHeight: 1.7, color: "#444", marginBottom: 14,
+            }}>
+              I'm a designer from New York focused on UI and digital experiences. This portfolio collects writing from EN131 — essays exploring fashion, identity, and culture that shaped how I think about design and visual communication.
+            </p>
             <a
               href="https://www.winsonchen.digital/"
               target="_blank"
               rel="noopener noreferrer"
               style={{
-                fontFamily: "var(--mono)", fontSize: "0.7rem", fontWeight: 700,
-                textTransform: "uppercase", letterSpacing: "0.08em",
+                fontFamily: "var(--mono)", fontSize: "0.65rem", fontWeight: 700,
+                textTransform: "uppercase", letterSpacing: "0.1em",
                 color: "var(--nb-text)", textDecoration: "none",
-                borderBottom: "2px solid var(--nb-orange)", paddingBottom: 1,
+                background: "var(--nb-yellow)", border: "2px solid var(--nb-border)",
+                boxShadow: "3px 3px 0 var(--nb-shadow)",
+                padding: "6px 14px", display: "inline-block",
               }}
             >
               winsonchen.digital ↗
